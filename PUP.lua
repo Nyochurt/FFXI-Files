@@ -79,7 +79,7 @@ function user_setup()
 		gear.PUPAF.Body 				= {name="Foire Tobe +2"}
 		gear.PUPAF.Hands 				= {name="Foire Dastanas +2"}
 		gear.PUPAF.Legs 				= {name="Foire Churidars +2"}
-		gear.PUPAF.Feet 				= {name="Foire Bab. +1"}
+		gear.PUPAF.Feet 				= {name="Foire Bab. +2"}
 		
 		-- Relic --
 		gear.PUPRelic = {}
@@ -165,7 +165,7 @@ function user_setup()
 		gear.Hiza = {}
 		gear.Hiza.Head 					= {name="Hizamaru Somen +2"}
 		gear.Hiza.Body 					= {name="Hiza. Haramaki +2"}
-		gear.Hiza.Hands 				= {name="Hizamaru Kote +1"}
+		gear.Hiza.Hands 				= {name="Hizamaru Kote +2"}
 		gear.Hiza.Legs 					= {name="Hiza. Hizayoroi +2"}
 		gear.Hiza.Feet 					= {name="Hiza. Sune-Ate +2"}
 		

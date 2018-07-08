@@ -185,7 +185,7 @@ function user_setup()
 		gear.Amalric.Hands = {}
 		gear.Amalric.Hands.A 			= {name="Amalric Gages", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}}
 		gear.Amalric.Hands.C 			= {name="Amalric Gages", augments={'INT+10','Elem. magic skill +15','Dark magic skill +15',}}
-		gear.Amalric.Hands.D 			= {name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15'}}
+		gear.Amalric.Hands.D 			= {name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20'}}
 		gear.Amalric.Legs = {}
 		--gear.Amalric.Legs.A 			= {name="Amalric Slops", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}}
 		gear.Amalric.Legs.C 			= {name="Amalric Slops", augments={'INT+10','Elem. magic skill +15','Dark magic skill +15',}}
@@ -207,12 +207,12 @@ function user_setup()
 		gear.Merlinic.Hands = {}
 		gear.Merlinic.Hands.DrAsp 		= {name="Merlinic Dastanas", augments={'Accuracy+12','"Drain" and "Aspir" potency +10','INT+2','Mag. Acc.+15','"Mag.Atk.Bns."+12',}}
 		gear.Merlinic.Hands.FC 			= {name="Merlinic Dastanas", augments={'Mag. Acc.+26','"Fast Cast"+6','INT+1','"Mag.Atk.Bns."+6',}}
-		gear.Merlinic.Hands.Ref			= {name="Merlinic Dastanas", augments={'Pet: "Dbl.Atk."+1 Pet: Crit.hit rate +1','Rng.Acc.+27','"Refresh"+1',}}
+		gear.Merlinic.Hands.Ref			= {name="Merlinic Dastanas", augments={'Crit. hit damage +1%','Pet: AGI+8','"Refresh"+2','Accuracy+15 Attack+15',}}
 		gear.Merlinic.Legs = {}
 		gear.Merlinic.Legs.DrAsp 		= {name="Merlinic Shalwar", augments={'Mag. Acc.+22','"Drain" and "Aspir" potency +11','AGI+10','"Mag.Atk.Bns."+6',}}
 		gear.Merlinic.Legs.MAB 			= {name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst dmg.+8%','MND+7','Mag. Acc.+15','"Mag.Atk.Bns."+12',}}
 		gear.Merlinic.Legs.Macc			= {name="Merlinic Shalwar", augments={'Mag. Acc.+27','"Avatar perpetuation cost" -6','Accuracy+4 Attack+4','Mag. Acc.+19 "Mag.Atk.Bns."+19',}}
-		gear.Merlinic.Legs.Ref			= {name="Merlinic Shalwar", augments={'"Dual Wield"+1','Pet: Attack+27 Pet: Rng.Atk.+27','"Refresh"+1','Accuracy+11 Attack+11',}}
+		gear.Merlinic.Legs.Ref			= {name="Merlinic Shalwar", augments={'"Store TP"+5','Accuracy+1','"Refresh"+2','Mag. Acc.+14 "Mag.Atk.Bns."+14',}}
 		gear.Merlinic.Feet = {}
 		gear.Merlinic.Feet.Burst 		= {name="Merlinic Crackows", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Magic burst dmg.+8%','MND+14','Mag. Acc.+15','"Mag.Atk.Bns."+10',}}
 		gear.Merlinic.Feet.DrAsp 		= {name="Merlinic Crackows", augments={'Mag. Acc.+24','"Drain" and "Aspir" potency +9','INT+4',}}
@@ -486,7 +486,7 @@ function init_gear_sets()
 																	waist="Fotia Belt",
 																	left_ear="Odnowa Earring +1",
 																	right_ear="Sherida Earring",
-																	left_ring="Shiva Ring",
+																	left_ring="Shiva Ring +1",
 																	right_ring="Rufescent Ring",
 																	back=gear.Sucellos.WSD}				
 	-- 40% STR / 40% INT	
@@ -500,7 +500,7 @@ function init_gear_sets()
 																	waist="Fotia Belt",
 																	left_ear="Odnowa Earring +1",
 																	right_ear="Sherida Earring",
-																	left_ring="Shiva Ring",
+																	left_ring="Shiva Ring +1",
 																	right_ring="Rufescent Ring",
 																	back=gear.Sucellos.WSD}				
 	-- 100% STR
@@ -938,7 +938,7 @@ function init_gear_sets()
 																	waist="Fotia Belt",
 																	left_ear="Odnowa Earring +1",
 																	right_ear="Sherida Earring",
-																	left_ring="Shiva Ring",
+																	left_ring="Shiva Ring +1",
 																	right_ring="Rufescent Ring",
 																	back=gear.Sucellos.WSD}	
 	-- 40% STR / 40% INT
@@ -952,7 +952,7 @@ function init_gear_sets()
 																	waist="Fotia Belt",
 																	left_ear="Odnowa Earring +1",
 																	right_ear="Sherida Earring",
-																	left_ring="Shiva Ring",
+																	left_ring="Shiva Ring +1",
 																	right_ring="Rufescent Ring",
 																	back=gear.Sucellos.WSD}	
 	-- 40% STR / 40% MND
@@ -2144,13 +2144,13 @@ function init_gear_sets()
 	----------------------------------------------------------------
     -- Magic burst set
 	----------------------------------------------------------------
-	sets.magic_burst = 												{head=gear.Merlinic.Head.MAB,		-- 9%
+	sets.magic_burst = 												{head=gear.Merlinic.Head.MAB,    	-- 9%
 																	body="Ea Houppelande",				-- 8%	- 8%II
-																	hands="Ea Cuffs",      				-- 5%  	- 5%II
-																	legs=gear.Merlinic.Legs.MAB,		-- 8%
-																	feet=gear.Merlinic.Feet.Burst,		-- 8%
-																	neck="Mizu. Kubikazari",			--10%
-																	left_ring="Mujin Band",}			-- 5% II
+																	hands="Ea Cuffs",      				-- 5%	- 5%II
+																	legs=gear.Merlinic.Legs.MAB,     	-- 8%
+																	feet=gear.Merlinic.Feet.MAB,   		
+																	neck="Mizu. Kubikazari",        	-- 10% 
+																	left_ring="Mujin Band",}        	--  	- 5%II
 end
 --------------------------------------------------------------------------------------------------------------------
 -- Job-specific hooks for standard casting events.

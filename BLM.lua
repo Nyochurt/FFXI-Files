@@ -85,18 +85,18 @@ function user_setup()
     
 	-- Artifact --
 		gear.BLMAF = {}
-		gear.BLMAF.Head 				= {name="Spae. Petasos +2"}
+		gear.BLMAF.Head 				= {name="Spae. Petasos +3"}
 		gear.BLMAF.Body 				= {name="Spae. Coat +3"}
 		gear.BLMAF.Hands 				= {name="Spae. Gloves +3"}
 		gear.BLMAF.Legs 				= {name="Spae. Tonban +3"}
-		gear.BLMAF.Feet 				= {name="Spae. Sabots +2"}
+		gear.BLMAF.Feet 				= {name="Spae. Sabots +3"}
 	
 	-- Relic119 - AMII and Manafont Bonuses
 		gear.BLMRelic = {}
-		gear.BLMRelic.Head 				= {name="Arch. Petasos +1", augments={'Increases Ancient Magic II damage',}}
-		gear.BLMRelic.Body 				= {name="Arch. Coat +1", augments={'Enhances "Manafont" effect',}}
+		gear.BLMRelic.Head 				= {name="Arch. Petasos +2", augments={'Increases Ancient Magic II damage',}}
+		gear.BLMRelic.Body 				= {name="Arch. Coat +3", augments={'Enhances "Manafont" effect',}}
 		gear.BLMRelic.Hands 			= {name="Arch. Gloves +1", augments={'Reduces Ancient Magic II casting time',}}
-		gear.BLMRelic.Legs 				= {name="Arch. Tonban +1", augments={'Increases Ancient Magic II accuracy',}}
+		gear.BLMRelic.Legs 				= {name="Arch. Tonban +3", augments={'Increases Ancient Magic II accuracy',}}
 		gear.BLMRelic.Feet 				= {name="Arch. Sabots +1", augments={'Reduces Ancient Magic II MP cost',}}
 	
 	-- Empyrean --
@@ -143,7 +143,7 @@ function user_setup()
 		gear.Amalric.Body.D				= {name="Amalric Doublet", augments={'MP+60','"Mag.Atk.Bns."+20','"Fast Cast"+3'}}
 		gear.Amalric.Hands = {}
 		gear.Amalric.Hands.A 			= {name="Amalric Gages", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}}
-		gear.Amalric.Hands.D 			= {name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15'}}
+		gear.Amalric.Hands.D 			= {name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20'}}
 		gear.Amalric.Legs = {}
 		gear.Amalric.Legs.C 			= {name="Amalric Slops", augments={'INT+10','Elem. magic skill +15','Dark magic skill +15',}}
 		gear.Amalric.Legs.D 			= {name="Amalric Slops", augments={'MP+60','"Mag.Atk.Bns."+20','Enmity-5',}}
@@ -164,11 +164,11 @@ function user_setup()
 		gear.Merlinic.Hands = {}
 		gear.Merlinic.Hands.DrAsp 		= {name="Merlinic Dastanas", augments={'Accuracy+12','"Drain" and "Aspir" potency +10','INT+2','Mag. Acc.+15','"Mag.Atk.Bns."+12',}}
 		gear.Merlinic.Hands.FC			= {name="Merlinic Dastanas", augments={'Mag. Acc.+26','"Fast Cast"+6','INT+1','"Mag.Atk.Bns."+6',}}
-		gear.Merlinic.Hands.Ref			= {name="Merlinic Dastanas", augments={'Pet: "Dbl.Atk."+1 Pet: Crit.hit rate +1','Rng.Acc.+27','"Refresh"+1',}}
+		gear.Merlinic.Hands.Ref			= {name="Merlinic Dastanas", augments={'Crit. hit damage +1%','Pet: AGI+8','"Refresh"+2','Accuracy+15 Attack+15',}}
 		gear.Merlinic.Legs = {}
 		gear.Merlinic.Legs.DrAsp 		= {name="Merlinic Shalwar", augments={'Mag. Acc.+22','"Drain" and "Aspir" potency +11','AGI+10','"Mag.Atk.Bns."+6',}}
 		gear.Merlinic.Legs.MAB 			= {name="Merlinic Shalwar", augments={'Mag. Acc.+23 "Mag.Atk.Bns."+23','Magic burst dmg.+8%','MND+7','Mag. Acc.+15','"Mag.Atk.Bns."+12',}}
-		gear.Merlinic.Legs.Ref			= {name="Merlinic Shalwar", augments={'"Dual Wield"+1','Pet: Attack+27 Pet: Rng.Atk.+27','"Refresh"+1','Accuracy+11 Attack+11',}}
+		gear.Merlinic.Legs.Ref			= {name="Merlinic Shalwar", augments={'"Store TP"+5','Accuracy+1','"Refresh"+2','Mag. Acc.+14 "Mag.Atk.Bns."+14',}}
 		gear.Merlinic.Feet = {}
 		gear.Merlinic.Feet.Burst 		= {name="Merlinic Crackows", augments={'Mag. Acc.+16 "Mag.Atk.Bns."+16','Magic burst dmg.+8%','MND+14','Mag. Acc.+15','"Mag.Atk.Bns."+10',}}
 		gear.Merlinic.Feet.DrAsp 		= {name="Merlinic Crackows", augments={'Mag. Acc.+24','"Drain" and "Aspir" potency +9','INT+4',}}
@@ -200,7 +200,7 @@ function user_setup()
 		-- Mallquis
 		gear.Mallquis = {}
 	    gear.Mallquis.Head 				= {name="Mallquis Chapeau +1"}
-		gear.Mallquis.Body 				= {name="Mallquis Saio +1"}
+		gear.Mallquis.Body 				= {name="Mallquis Saio +2"}
 		gear.Mallquis.Hands 			= {name="Mallquis Cuffs +1"}
 		gear.Mallquis.Legs 				= {name="Mallquis Trews +1"}
 		gear.Mallquis.Feet 				= {name="Mallquis Clogs +1"}
@@ -387,7 +387,7 @@ function init_gear_sets()
 	--sets.Protect_Shell = 											{right_ring="Sheltered Ring"}
 	--sets.SorcEarring = 											{left_ear="Sorcerer's Earring"}
 	sets.SorcRing = 												{left_ring="Sorcerer's Ring"}
-	sets.ConsMP = 													{body="Spae. Coat +2"}
+	sets.ConsMP = 													{body="Spae. Coat +3"}
 ----------------------------------------------------------------------------
 -- PRECAST SETS
 ----------------------------------------------------------------------------
@@ -911,7 +911,7 @@ function init_gear_sets()
 																	sub="Niobid Strap",
 																	ammo="Pemphredo Tathlum",
 																	head=gear.BLMEmpy.Head,
-																	body=gear.Psycloth.Body,
+																	body=gear.BLMRelic.Body,
 																	hands=gear.BLMAF.Hands,
 																	legs=gear.Amalric.Legs.C,
 																	feet=gear.BLMRelic.Feet,
@@ -935,7 +935,7 @@ function init_gear_sets()
 																	waist="Refoccilation Stone",
 																	left_ear="Crematio Earring",
 																	right_ear="Barkaro. Earring",
-																	left_ring="Resonance Ring",
+																	left_ring="Shiva Ring +1",
 																	right_ring="Adoulin Ring",
 																	back=gear.Taranus.Nuke,}
 																			
@@ -944,16 +944,16 @@ function init_gear_sets()
 	sets.midcast.HighTierNuke = 									{main=gear.Staff.Lathi.A,
 																	sub="Niobid Strap",
 																	ammo="Pemphredo Tathlum",
-																	head=gear.Merlinic.Head.MAB,
+																	head=gear.BLMRelic.Head,
 																	body=gear.Merlinic.Body.MAB,
-																	hands=gear.Jhakri.Hands,
+																	hands=gear.Amalric.Hands.D,
 																	legs=gear.Merlinic.Legs.MAB,
 																	feet=gear.Merlinic.Feet.MAB,
 																	neck="Saevus Pendant +1",
 																	waist="Refoccilation Stone",
 																	left_ear="Friomisi Earring",
 																	right_ear="Barkaro. Earring",
-																	left_ring="Resonance Ring",
+																	left_ring="Shiva Ring +1",
 																	right_ring="Adoulin Ring",
 																	back=gear.Taranus.Nuke,}
 
@@ -1144,11 +1144,11 @@ function init_gear_sets()
 	
 	sets.buff.Doom = 												{waist="Gishdubar sash",}
     ----------------------------------------------------------------
-        -- Magic burst set (MB = 45% MBD + 18% MBDII, DeathMB = 42% MBD + 13% MBDII)
+        -- Magic burst set (MB = 40% MBD + 19% MBDII, DeathMB = 42% MBD + 13% MBDII)
 	----------------------------------------------------------------
 	sets.Elemental_MB = 											{head=gear.Merlinic.Head.MAB,    	-- 9%
 																	body="Ea Houppelande",				-- 8%	- 8%II
-																	hands="Ea Cuffs",      				-- 5%  	- 5%II
+																	hands=gear.Amalric.Hands.D,      	--		- 6%II
 																	legs=gear.Merlinic.Legs.MAB,     	-- 8%
 																	feet=gear.Merlinic.Feet.MAB,   		
 																	neck="Mizu. Kubikazari",        	-- 10% 

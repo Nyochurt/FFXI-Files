@@ -136,7 +136,7 @@ function user_setup()
 		gear.Hiza = {}
 		gear.Hiza.Head 					= {name="Hizamaru Somen +2"}
 		gear.Hiza.Body 					= {name="Hiza. Haramaki +2"}
-		gear.Hiza.Hands					= {name="Hizamaru Kote +1"}
+		gear.Hiza.Hands					= {name="Hizamaru Kote +2"}
 		gear.Hiza.Legs 					= {name="Hiza. Hizayoroi +2"}
 		gear.Hiza.Feet 					= {name="Hiza. Sune-Ate +2"}
 
@@ -365,7 +365,7 @@ function init_gear_sets()
 																	left_ear="Friomisi Earring",
 																	right_ear="Crematio Earring",			
 																	left_ring="Rufescent Ring",
-																	right_ring="Shiva Ring",
+																	right_ring="Shiva Ring +1",
 																	back=gear.Andartia.WSD}
 	-- 30% STR / 30% INT 
     sets.precast.WS['Blade: To'] = 									{ammo="Pemphredo Tathlum",
@@ -379,7 +379,7 @@ function init_gear_sets()
 																	left_ear="Friomisi Earring",
 																	right_ear="Crematio Earring",			
 																	left_ring="Rufescent Ring",
-																	right_ring="Shiva Ring",
+																	right_ring="Shiva Ring +1",
 																	back=gear.Andartia.WS}
 	-- 30% STR / 30% INT
     sets.precast.WS['Blade: Chi'] = 								{ammo="Pemphredo Tathlum",
@@ -393,7 +393,7 @@ function init_gear_sets()
 																	left_ear="Friomisi Earring",
 																	right_ear="Crematio Earring",			
 																	left_ring="Rufescent Ring",
-																	right_ring="Shiva Ring",
+																	right_ring="Shiva Ring +1",
 																	back=gear.Andartia.WSD}
 	-- 40% STR / 40% INT
     sets.precast.WS['Blade: Ei'] = 									{ammo="Pemphredo Tathlum",
@@ -407,7 +407,7 @@ function init_gear_sets()
 																	left_ear="Friomisi Earring",
 																	right_ear="Crematio Earring",			
 																	left_ring="Rufescent Ring",
-																	right_ring="Shiva Ring",
+																	right_ring="Shiva Ring +1",
 																	back=gear.Andartia.WSD}
 	-- 30% STR / 30% DEX
     sets.precast.WS['Blade: Jin'] = 								{ammo="Seething Bomblet +1",
@@ -449,7 +449,7 @@ function init_gear_sets()
 																	left_ear="Friomisi Earring",
 																	right_ear="Crematio Earring",			
 																	left_ring="Rufescent Ring",
-																	right_ring="Shiva Ring",
+																	right_ring="Shiva Ring +1",
 																	back=gear.Andartia.WSD}
 	-- 80% DEX
     sets.precast.WS['Blade: Metsu'] = 								{ammo="Seething Bomblet +1",
@@ -518,7 +518,7 @@ function init_gear_sets()
 																	left_ear="Friomisi Earring",
 																	right_ear="Crematio Earring",			
 																	left_ring="Rufescent Ring",
-																	right_ring="Shiva Ring",
+																	right_ring="Shiva Ring +1",
 																	back=gear.Andartia.Nuke}
 	------------------
 		--Dagger--
@@ -548,7 +548,7 @@ function init_gear_sets()
 																	waist="Fotia Belt",
 																	left_ear="Pixie Earring",
 																	right_ear=gear.right_Earring,
-																	left_ring="Shiva Ring",
+																	left_ring="Shiva Ring +1",
 																	right_ring="Metamor. Ring +1",
 																	back=gear.Andartia.Nuke}
 	--[[-- 40% DEX / 40% INT
@@ -604,7 +604,7 @@ function init_gear_sets()
 																	waist="Fotia Belt",
 																	left_ear="Pixie Earring",
 																	right_ear=gear.right_Earring,
-																	left_ring="Shiva Ring",
+																	left_ring="Shiva Ring +1",
 																	right_ring="Metamor. Ring +1",
 																	back=gear.Andartia.Nuke}
 	-- 100% MND
@@ -660,7 +660,7 @@ function init_gear_sets()
 																	waist="Fotia Belt",
 																	left_ear="Pixie Earring",
 																	right_ear=gear.right_Earring,
-																	left_ring="Shiva Ring",
+																	left_ring="Shiva Ring +1",
 																	right_ring="Metamor. Ring +1",
 																	back=gear.Andartia.Nuke}
 	-- AGI - 73% / 76% / 79% / 82% / 85%													

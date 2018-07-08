@@ -201,7 +201,7 @@ function user_setup()
 		gear.Amalric.Body.D 			= {name="Amalric Doublet", augments={'MP+60','"Mag.Atk.Bns."+20','"Fast Cast"+3'}}
 		gear.Amalric.Hands = {}
 		gear.Amalric.Hands.A 			= {name="Amalric Gages", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}}
-		gear.Amalric.Hands.D 			= {name="Amalric Gages", augments={'INT+10','Mag. Acc.+15','"Mag.Atk.Bns."+15'}}
+		gear.Amalric.Hands.D 			= {name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20'}}
 		gear.Amalric.Legs = {}
 		--gear.Amalric.Legs.A			= {name="Amalric Slops", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}}
 		gear.Amalric.Legs.C 			= {name="Amalric Slops", augments={'INT+10','Elem. magic skill +15','Dark magic skill +15',}}
@@ -267,7 +267,7 @@ function user_setup()
 		-- Mallquis
 		gear.Mallquis = {}
 	    gear.Mallquis.Head 				= {name="Mallquis Chapeau +1"}
-		gear.Mallquis.Body 				= {name="Mallquis Saio +1"}
+		gear.Mallquis.Body 				= {name="Mallquis Saio +2"}
 		gear.Mallquis.Hands 			= {name="Mallquis Cuffs +1"}
 		gear.Mallquis.Legs 				= {name="Mallquis Trews +1"}
 		gear.Mallquis.Feet 				= {name="Mallquis Clogs +1"}

@@ -127,7 +127,7 @@ function user_setup()
 		gear.Hiza = {}
 		gear.Hiza.Head 					= {name="Hizamaru Somen +2"}
 		gear.Hiza.Body 					= {name="Hiza. Haramaki +2"}
-		gear.Hiza.Hands					= {name="Hizamaru Kote +1"}
+		gear.Hiza.Hands					= {name="Hizamaru Kote +2"}
 		gear.Hiza.Legs 					= {name="Hiza. Hizayoroi +2"}
 		gear.Hiza.Feet 					= {name="Hiza. Sune-Ate +2"}
 		
@@ -304,11 +304,11 @@ function init_gear_sets()
 	------------------
 	-- 60% STR
     sets.precast.WS['Tachi: Enpi'] = 								{ammo="Knobkierrie",
-																	head="Ynglinga Sallet",
-																	body=gear.Despair.Body,
-																	hands=gear.Despair.Hands,
-																	legs=gear.Hiza.Legs,
-																	feet=gear.Ryuo.Feet,
+																	head="Sukeroku Hachi.",
+																	body={ name="Valorous Mail", augments={'Weapon skill damage +5%','AGI+10',}},
+																	hands={ name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}},
+																	legs="Hiza. Hizayoroi +2",
+																	feet={ name="Valorous Greaves", augments={'Attack+24','Weapon skill damage +4%','Accuracy+4',}},
 																	neck="Fotia Gorget",
 																	waist="Fotia Belt",
 																	left_ear=gear.left_Earring,
@@ -318,11 +318,11 @@ function init_gear_sets()
 																	back="Vespid Mantle",}
 	-- 60% STR
 	sets.precast.WS['Tachi: Hobaku'] = 								{ammo="Knobkierrie",
-																	head="Ynglinga Sallet",
-																	body=gear.Despair.Body,
-																	hands=gear.Despair.Hands,
-																	legs=gear.Hiza.Legs,
-																	feet=gear.Ryuo.Feet,
+																	head="Sukeroku Hachi.",
+																	body={ name="Valorous Mail", augments={'Weapon skill damage +5%','AGI+10',}},
+																	hands={ name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}},
+																	legs="Hiza. Hizayoroi +2",
+																	feet={ name="Valorous Greaves", augments={'Attack+24','Weapon skill damage +4%','Accuracy+4',}},
 																	neck="Fotia Gorget",
 																	waist="Fotia Belt",
 																	left_ear=gear.left_Earring,
@@ -332,11 +332,11 @@ function init_gear_sets()
 																	back="Vespid Mantle",}
 	-- 60% STR
     sets.precast.WS['Tachi: Goten'] = 								{ammo="Knobkierrie",
-																	head="Ynglinga Sallet",
-																	body=gear.Despair.Body,
-																	hands=gear.Despair.Hands,
-																	legs=gear.Hiza.Legs,
-																	feet=gear.Ryuo.Feet,
+																	head="Sukeroku Hachi.",
+																	body={ name="Valorous Mail", augments={'Weapon skill damage +5%','AGI+10',}},
+																	hands={ name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}},
+																	legs="Hiza. Hizayoroi +2",
+																	feet={ name="Valorous Greaves", augments={'Attack+24','Weapon skill damage +4%','Accuracy+4',}},
 																	neck="Fotia Gorget",
 																	waist="Fotia Belt",
 																	left_ear=gear.left_Earring,
@@ -346,11 +346,11 @@ function init_gear_sets()
 																	back="Vespid Mantle",}
 	-- 75% STR
     sets.precast.WS['Tachi: Kagero'] = 								{ammo="Knobkierrie",
-																	head="Ynglinga Sallet",
-																	body=gear.Despair.Body,
-																	hands=gear.Despair.Hands,
-																	legs=gear.Hiza.Legs,
-																	feet=gear.Ryuo.Feet,
+																	head="Sukeroku Hachi.",
+																	body={ name="Valorous Mail", augments={'Weapon skill damage +5%','AGI+10',}},
+																	hands={ name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}},
+																	legs="Hiza. Hizayoroi +2",
+																	feet={ name="Valorous Greaves", augments={'Attack+24','Weapon skill damage +4%','Accuracy+4',}},
 																	neck="Fotia Gorget",
 																	waist="Fotia Belt",
 																	left_ear=gear.left_Earring,
@@ -360,11 +360,11 @@ function init_gear_sets()
 																	back="Vespid Mantle",}
 	-- 30% STR
     sets.precast.WS['Tachi: Jinpu'] = 								{ammo="Knobkierrie",
-																	head="Ynglinga Sallet",
-																	body=gear.Despair.Body,
-																	hands=gear.Despair.Hands,
-																	legs=gear.Hiza.Legs,
-																	feet=gear.Ryuo.Feet,
+																	head="Sukeroku Hachi.",
+																	body={ name="Valorous Mail", augments={'Weapon skill damage +5%','AGI+10',}},
+																	hands={ name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}},
+																	legs="Hiza. Hizayoroi +2",
+																	feet={ name="Valorous Greaves", augments={'Attack+24','Weapon skill damage +4%','Accuracy+4',}},
 																	neck="Fotia Gorget",
 																	waist="Fotia Belt",
 																	left_ear=gear.left_Earring,
@@ -388,11 +388,11 @@ function init_gear_sets()
 																	back="Vespid Mantle",}
 	-- 75% STR / 1.5 ATT Mod
     sets.precast.WS['Tachi: Yukikaze'] =							{ammo="Knobkierrie",
-																	head="Ynglinga Sallet",
-																	body=gear.Despair.Body,
-																	hands=gear.Despair.Hands,
-																	legs=gear.Hiza.Legs,
-																	feet=gear.Ryuo.Feet,
+																	head="Sukeroku Hachi.",
+																	body={ name="Valorous Mail", augments={'Weapon skill damage +5%','AGI+10',}},
+																	hands={ name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}},
+																	legs="Hiza. Hizayoroi +2",
+																	feet={ name="Valorous Greaves", augments={'Attack+24','Weapon skill damage +4%','Accuracy+4',}},
 																	neck="Fotia Gorget",
 																	waist="Fotia Belt",
 																	left_ear=gear.left_Earring,
@@ -402,11 +402,11 @@ function init_gear_sets()
 																	back="Vespid Mantle",}
 	-- 75% STR / 2.0 ATT Mod
     sets.precast.WS['Tachi: Gekko'] =								{ammo="Knobkierrie",
-																	head="Ynglinga Sallet",
-																	body=gear.Despair.Body,
-																	hands=gear.Despair.Hands,
-																	legs=gear.Hiza.Legs,
-																	feet=gear.Ryuo.Feet,
+																	head="Sukeroku Hachi.",
+																	body={ name="Valorous Mail", augments={'Weapon skill damage +5%','AGI+10',}},
+																	hands={ name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}},
+																	legs="Hiza. Hizayoroi +2",
+																	feet={ name="Valorous Greaves", augments={'Attack+24','Weapon skill damage +4%','Accuracy+4',}},
 																	neck="Fotia Gorget",
 																	waist="Fotia Belt",
 																	left_ear=gear.left_Earring,
@@ -416,11 +416,11 @@ function init_gear_sets()
 																	back="Vespid Mantle",}
 	-- 75% STR / 1.65 ATT Mod
     sets.precast.WS['Tachi: Kasha'] = 								{ammo="Knobkierrie",
-																	head="Ynglinga Sallet",
-																	body=gear.Despair.Body,
-																	hands=gear.Despair.Hands,
-																	legs=gear.Hiza.Legs,
-																	feet=gear.Ryuo.Feet,
+																	head="Sukeroku Hachi.",
+																	body={ name="Valorous Mail", augments={'Weapon skill damage +5%','AGI+10',}},
+																	hands={ name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}},
+																	legs="Hiza. Hizayoroi +2",
+																	feet={ name="Valorous Greaves", augments={'Attack+24','Weapon skill damage +4%','Accuracy+4',}},
 																	neck="Fotia Gorget",
 																	waist="Fotia Belt",
 																	left_ear=gear.left_Earring,
@@ -444,11 +444,11 @@ function init_gear_sets()
 																	back="Vespid Mantle",}
 	-- STR - 73% / 76% / 79% / 82% / 85% / 1.35 - 1.45 ATT Mod
     sets.precast.WS['Tachi: Shoha'] =  								{ammo="Knobkierrie",
-																	head="Ynglinga Sallet",
-																	body=gear.Despair.Body,
-																	hands=gear.Despair.Hands,
-																	legs=gear.Hiza.Legs,
-																	feet=gear.Ryuo.Feet,
+																	head="Sukeroku Hachi.",
+																	body={ name="Valorous Mail", augments={'Weapon skill damage +5%','AGI+10',}},
+																	hands={ name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}},
+																	legs="Hiza. Hizayoroi +2",
+																	feet={ name="Valorous Greaves", augments={'Attack+24','Weapon skill damage +4%','Accuracy+4',}},
 																	neck="Fotia Gorget",
 																	waist="Fotia Belt",
 																	left_ear=gear.left_Earring,
@@ -458,11 +458,11 @@ function init_gear_sets()
 																	back="Vespid Mantle",}
 	-- 80% STR
     sets.precast.WS['Tachi: Fudo'] = 								{ammo="Knobkierrie",
-																	head="Ynglinga Sallet",
-																	body=gear.Despair.Body,
-																	hands=gear.Despair.Hands,
-																	legs=gear.Hiza.Legs,
-																	feet=gear.Ryuo.Feet,
+																	head="Sukeroku Hachi.",
+																	body={ name="Valorous Mail", augments={'Weapon skill damage +5%','AGI+10',}},
+																	hands={ name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}},
+																	legs="Hiza. Hizayoroi +2",
+																	feet={ name="Valorous Greaves", augments={'Attack+24','Weapon skill damage +4%','Accuracy+4',}},
 																	neck="Fotia Gorget",
 																	waist="Fotia Belt",
 																	left_ear=gear.left_Earring,
@@ -472,11 +472,11 @@ function init_gear_sets()
 																	back="Vespid Mantle",}
 	-- 50% STR
     sets.precast.WS['Tachi: Rana'] = 								{ammo="Knobkierrie",
-																	head="Ynglinga Sallet",
-																	body=gear.Despair.Body,
-																	hands=gear.Despair.Hands,
-																	legs=gear.Hiza.Legs,
-																	feet=gear.Ryuo.Feet,
+																	head="Sukeroku Hachi.",
+																	body={ name="Valorous Mail", augments={'Weapon skill damage +5%','AGI+10',}},
+																	hands={ name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}},
+																	legs="Hiza. Hizayoroi +2",
+																	feet={ name="Valorous Greaves", augments={'Attack+24','Weapon skill damage +4%','Accuracy+4',}},
 																	neck="Fotia Gorget",
 																	waist="Fotia Belt",
 																	left_ear=gear.left_Earring,
@@ -486,11 +486,11 @@ function init_gear_sets()
 																	back="Vespid Mantle",}
 	-- 75% STR
     sets.precast.WS['Tachi: Kaiten'] = 								{ammo="Knobkierrie",
-																	head="Ynglinga Sallet",
-																	body=gear.Despair.Body,
-																	hands=gear.Despair.Hands,
-																	legs=gear.Hiza.Legs,
-																	feet=gear.Ryuo.Feet,
+																	head="Sukeroku Hachi.",
+																	body={ name="Valorous Mail", augments={'Weapon skill damage +5%','AGI+10',}},
+																	hands={ name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}},
+																	legs="Hiza. Hizayoroi +2",
+																	feet={ name="Valorous Greaves", augments={'Attack+24','Weapon skill damage +4%','Accuracy+4',}},
 																	neck="Fotia Gorget",
 																	waist="Fotia Belt",
 																	left_ear=gear.left_Earring,
@@ -526,7 +526,7 @@ function init_gear_sets()
 																	waist="Fotia Belt",
 																	left_ear="Pixie Earring",
 																	right_ear=gear.right_Earring,
-																	left_ring="Shiva Ring",
+																	left_ring="Shiva Ring +1",
 																	right_ring="Metamor. Ring +1",
 																	back=gear.Andartia.Nuke}
 	-- 40% DEX / 40% INT
@@ -582,7 +582,7 @@ function init_gear_sets()
 																	waist="Fotia Belt",
 																	left_ear="Pixie Earring",
 																	right_ear=gear.right_Earring,
-																	left_ring="Shiva Ring",
+																	left_ring="Shiva Ring +1",
 																	right_ring="Metamor. Ring +1",
 																	back=gear.Andartia.Nuke}
 	-- 100% MND
@@ -638,7 +638,7 @@ function init_gear_sets()
 																	waist="Fotia Belt",
 																	left_ear="Pixie Earring",
 																	right_ear=gear.right_Earring,
-																	left_ring="Shiva Ring",
+																	left_ring="Shiva Ring +1",
 																	right_ring="Metamor. Ring +1",
 																	back=gear.Andartia.Nuke}
 	-- AGI - 73% / 76% / 79% / 82% / 85%													
@@ -918,19 +918,19 @@ function init_gear_sets()
     ----------------------------------------------------------------
 	-- 39 DW To Cap Delay (38 DW is 79.75% Delay Reduction)
 	----------------------------------------------------------------
-    sets.engaged =     												{ammo="Knobkierrie",
-																	head=gear.Val.Head,
-																	body={ name="Found. Breastplate", augments={'Accuracy+15','Mag. Acc.+15','Attack+15','"Mag.Atk.Bns."+15',}},
-																	hands=gear.Ryuo.Hands,
-																	legs=gear.Ryuo.Legs,
-																	feet=gear.Val.Feet,
+    sets.engaged =     												{ammo="Amar Cluster",
+																	head={ name="Valorous Mask", augments={'Accuracy+18 Attack+18','"Dbl.Atk."+3','Accuracy+8','Attack+13',}},
+																	body={ name="Valorous Mail", augments={'Accuracy+28','"Dbl.Atk."+3','DEX+10',}},
+																	hands={ name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}},
+																	legs={ name="Ryuo Hakama", augments={'Accuracy+20','"Store TP"+4','Phys. dmg. taken -3',}},
+																	feet={ name="Valorous Greaves", augments={'Accuracy+15 Attack+15','"Dbl.Atk."+4','STR+1','Attack+7',}},
 																	neck="Clotharius Torque",
-																	waist="Sarissapho. Belt",
-																	left_ear="Trux Earring",
-																	right_ear="Brutal Earring",
-																	left_ring="Ilabrat Ring",
-																	right_ring="Niqmaddu Ring",
-																	back="Takaha Mantle",}
+																	waist="Ioskeha Belt",
+																	left_ear="Telos Earring",
+																	right_ear="Trux Earring",
+																	left_ring="Niqmaddu Ring",
+																	right_ring="Ilabrat Ring",
+																	back={ name="Takaha Mantle", augments={'STR+3','"Zanshin"+2','"Store TP"+1','Meditate eff. dur. +6',}},}
 																	--[[{ammo="Knobkierrie",
 																	head=gear.Val.Head,
 																	body="Vatic Byrnie",
