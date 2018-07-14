@@ -98,8 +98,8 @@ function user_setup()
 	-- Relic119 -- 						TierII Enfeebles/PhalanxII and Chainspell Bonuses
 		gear.RDMRelic = {}
 		gear.RDMRelic.Head 				= {name="Viti. Chapeau +1", augments={'Enhances "Dia III" effect','Enhances "Slow II" effect',}}
-		gear.RDMRelic.Body 				= {name="Viti. Tabard +1", augments={'Enhances "Chainspell" effect',}}
-		gear.RDMRelic.Hands				= {name="Viti. Gloves +1", augments={'Enhances "Phalanx II" effect',}}
+		gear.RDMRelic.Body 				= {name="Viti. Tabard +3", augments={'Enhances "Chainspell" effect',}}
+		gear.RDMRelic.Hands				= {name="Viti. Gloves +2", augments={'Enhances "Phalanx II" effect',}}
 		gear.RDMRelic.Legs 				= {name="Viti. Tights +1", augments={'Enhances "Bio III" effect','Enhances "Blind II" effect',}}
 		gear.RDMRelic.Feet 				= {name="Vitivation Boots +1", augments={'Enhances "Paralyze II" effect',}}
 	
@@ -990,7 +990,7 @@ function init_gear_sets()
 																	sub="Clerisy Strap", 				-- 2
 																	ammo="Sapience Orb", 				-- 2
 																	head=gear.RDMAF.Head, 				--16
-																	body="Zendik Robe", 				--13
+																	body=gear.RDMRelic.Body, 			--14
 																	hands=gear.Leyline, 				-- 7
 																	legs=gear.Psycloth.Legs, 			-- 7
 																	feet=gear.Merlinic.Feet.FC, 		--12
@@ -1308,10 +1308,10 @@ function init_gear_sets()
 	sets.midcast['Enhancing Magic'] = 								{main=gear.Staff.Grioavolr.Enh,
 																	sub="Fulcio Grip",
 																	ammo="Regal Gem",
-																	head="Befouled Crown",
+																	head=gear.Telchine.Head,
 																	body=gear.RDMRelic.Body,
 																	hands=gear.RDMAF.Hands,
-																	legs=gear.RDMAF.Legs,
+																	legs=gear.Telchine.Legs,
 																	feet=gear.RDMEmpy.Feet,
 																	neck="Incanter's Torque",
 																	waist="Cetl Belt",
@@ -1366,6 +1366,22 @@ function init_gear_sets()
 																	
 	sets.midcast.Stoneskin =					 					set_combine(sets.midcast.FastRecast,
 																	{neck="Nodens gorget",waist="Siegel Sash",right_ear="Earthcry Earring",back="Perimede Cape",})
+																
+	sets.midcast.Gain =												{main=gear.Staff.Grioavolr.Enh,
+																	sub="Fulcio Grip",
+																	ammo="Regal Gem",
+																	head=gear.Telchine.Head,
+																	body=gear.RDMRelic.Body,
+																	hands=gear.RDMRelic.Hands,
+																	legs=gear.Telchine.Legs,
+																	feet=gear.RDMEmpy.Feet,
+																	neck="Incanter's Torque",
+																	waist="Cetl Belt",
+																	left_ear="Andoaa Earring",
+																	right_ear="Augment. Earring",
+																	left_ring="Stikini Ring",
+																	right_ring="Stikini Ring",
+																	back=gear.Sucellos.Haste,}
 	----------------------------------------------------------------
 	-- Healing Magic Midcast set(s)
 	----------------------------------------------------------------
@@ -2279,8 +2295,7 @@ function job_post_midcast(spell, action, spellMap, eventArgs)
 				or string.find(spell.english,'Enaero') or string.find(spell.english,'Enaero II')
 				or string.find(spell.english,'Enstone') or string.find(spell.english,'Enstone II')
 				or string.find(spell.english,'Enthunder') or string.find(spell.english,'Enthunder II')
-				or string.find(spell.english,'Enwater') or string.find(spell.english,'Enwater II')
-				then
+				or string.find(spell.english,'Enwater') or string.find(spell.english,'Enwater II') then
 					equip(sets.midcast['Enhancing Magic'].Enspell)
 				end
 				if string.find(spell.english,'Protect') or string.find(spell.english,'Shell') then
@@ -2292,6 +2307,10 @@ function job_post_midcast(spell, action, spellMap, eventArgs)
 			elseif spellMap == 'Refresh' or spellMap == 'Refresh II' or spellMap == 'Refresh III' then
 				if spell.target.type == 'Self' then
 					equip(sets.midcast.RefreshSelf)
+				end
+			elseif spell.skill == 'Enhancing Magic' then
+				if spell.english:startswith('Gain') then
+					equip(sets.midcast.Gain)
 				end
 			elseif spell.skill == 'Enhancing Magic' then
 				if spell.english:startswith('Warp*|Retrace|Escape|Tractor') then

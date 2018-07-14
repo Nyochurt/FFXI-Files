@@ -93,7 +93,7 @@ function user_setup()
 	
 	-- Relic119 - AMII and Manafont Bonuses
 		gear.BLMRelic = {}
-		gear.BLMRelic.Head 				= {name="Arch. Petasos +2", augments={'Increases Ancient Magic II damage',}}
+		gear.BLMRelic.Head 				= {name="Arch. Petasos +3", augments={'Increases Ancient Magic II damage',}}
 		gear.BLMRelic.Body 				= {name="Arch. Coat +3", augments={'Enhances "Manafont" effect',}}
 		gear.BLMRelic.Hands 			= {name="Arch. Gloves +1", augments={'Reduces Ancient Magic II casting time',}}
 		gear.BLMRelic.Legs 				= {name="Arch. Tonban +3", augments={'Increases Ancient Magic II accuracy',}}
@@ -347,7 +347,7 @@ function init_gear_sets()
 																	body=gear.Merlinic.Body.MAB,
 																	hands=gear.BLMAF.Hands,
 																	legs=gear.Merlinic.Legs.MAB,
-																	feet=gear.Merlinic.Feet.Burst,
+																	feet=gear.Merlinic.Feet.MAB,
 																	neck="Sanctity Necklace",
 																	waist="Luminary Sash",
 																	left_ear="Barkaro. Earring",
@@ -1159,7 +1159,7 @@ function init_gear_sets()
 																	body=gear.Merlinic.Body.Burst,		-- 11%
 																	hands=gear.BLMAF.Hands,      		--   	- 8%II
 																	legs=gear.Merlinic.Legs.MAB,     	-- 8%
-																	feet=gear.Merlinic.Feet.Burst,   	-- 8%
+																	feet=gear.Merlinic.Feet.MAB,   	-- 8%
 																	neck="Mizu. Kubikazari",        	-- 10%
 																	left_ring="Mujin Band",        		-- 		- 5%II
 																	back=gear.Taranus.Nuke,}        	-- 5%	

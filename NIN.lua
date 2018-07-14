@@ -99,11 +99,11 @@ function user_setup()
 		
 		-- Relic --
 		gear.NINRelic = {}
-		gear.NINRelic.Head 				= {name="Mochi. Hatsuburi +1", augments={'Increases elem. ninjutsu III damage',}}
+		gear.NINRelic.Head 				= {name="Mochi. Hatsuburi +2", augments={'Increases elem. ninjutsu III damage',}}
 		gear.NINRelic.Body 				= {name="Mochi. Chainmail +1", augments={'Enhances "Sange" effect',}}
-		gear.NINRelic.Hands				= {name="Mochizuki Tekko +1", augments={'Enh. "Ninja Tool Expertise" effect',}}
+		gear.NINRelic.Hands				= {name="Mochizuki Tekko +2", augments={'Enh. "Ninja Tool Expertise" effect',}}
 		gear.NINRelic.Legs 				= {name="Mochi. Hakama +1", augments={'Enhances "Mijin Gakure" effect',}}
-		gear.NINRelic.Feet 				= {name="Mochi. Kyahan +1", augments={'Reduces elem. ninjutsu III cast time',}}
+		gear.NINRelic.Feet 				= {name="Mochi. Kyahan +2", augments={'Reduces elem. ninjutsu III cast time',}}
 		
 		-- Empyrean --
 		gear.NINEmpy = {}
