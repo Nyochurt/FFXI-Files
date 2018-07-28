@@ -161,8 +161,8 @@ function user_setup()
 
     -- Telchine
 		gear.Telchine = {}
-		gear.Telchine.Head				= {name="Telchine Cap", augments={'Evasion+14','Spell interruption rate down -7%','Enh. Mag. eff. dur. +7',}}
-		gear.Telchine.Body 				= {name="Telchine Chas.", augments={'Evasion+14','Spell interruption rate down -9%','Enh. Mag. eff. dur. +7',}}
+		gear.Telchine.Head				= {name="Telchine Cap", augments={'Evasion+14','Spell interruption rate down -7%','Enh. Mag. eff. dur. +8',}}
+		gear.Telchine.Body 				= {name="Telchine Chas.", augments={'Evasion+14','Spell interruption rate down -9%','Enh. Mag. eff. dur. +9',}}
 		gear.Telchine.Hands				= {name="Telchine Gloves", augments={'Mag. Evasion+10','"Cure" spellcasting time -4%','Enh. Mag. eff. dur. +9',}}
 		gear.Telchine.Legs				= {name="Telchine Braconi", augments={'Accuracy+10','Enh. Mag. eff. dur. +9',}}
 		gear.Telchine.Feet				= {name="Telchine Pigaches", augments={'Accuracy+10','"Cure" spellcasting time -4%','Enh. Mag. eff. dur. +9',}}
@@ -197,8 +197,8 @@ function user_setup()
 		gear.Amalric.Head.A 			= {name="Amalric Coif", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15'}}
 		--gear.Amalric.Head.B 			= {name="Amalric Coif", augments={'MP+60','INT+10','Enmity-5',}}
 		gear.Amalric.Body = {}
-		--gear.Amalric.Body.A 			= {name="Amalric Doublet", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15'}}
-		gear.Amalric.Body.D 			= {name="Amalric Doublet", augments={'MP+60','"Mag.Atk.Bns."+20','"Fast Cast"+3'}}
+		gear.Amalric.Body.A 			= {name="Amalric Doublet +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}}
+		gear.Amalric.Body.C 			= {name="Amalric Doublet", augments={'INT+10','Elem. magic skill +15','Dark magic skill +15',}}
 		gear.Amalric.Hands = {}
 		gear.Amalric.Hands.A 			= {name="Amalric Gages", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}}
 		gear.Amalric.Hands.D 			= {name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20'}}
@@ -789,7 +789,7 @@ function init_gear_sets()
 	sets.precast.WS['Myrkr'] = 										{sub="Niobid Strap",
 																	ammo="Ghastly Tathlum +1",
 																	head=gear.Amalric.Head.A,
-																	body=gear.Amalric.Body.D,
+																	body=gear.Amalric.Body.A,
 																	hands=gear.Amalric.Hands.A,
 																	legs=gear.Psycloth.Legs,
 																	feet=gear.Psycloth.Feet,

@@ -118,10 +118,10 @@ function user_setup()
        
     -- Telchine
 		gear.Telchine = {}
-		gear.Telchine.Head				= {name="Telchine Cap", augments={'"Conserve MP"+5','Enh. Mag. eff. dur. +7',}}
-		gear.Telchine.Body 				= {name="Telchine Chas.", augments={'Evasion+14','Spell interruption rate down -9%','Enh. Mag. eff. dur. +7',}}
+		gear.Telchine.Head				= {name="Telchine Cap", augments={'"Conserve MP"+5','Enh. Mag. eff. dur. +8',}}
+		gear.Telchine.Body 				= {name="Telchine Chas.", augments={'Evasion+14','Spell interruption rate down -9%','Enh. Mag. eff. dur. +9',}}
 		gear.Telchine.Hands				= {name="Telchine Gloves", augments={'Mag. Evasion+10','"Cure" spellcasting time -4%','Enh. Mag. eff. dur. +9',}}
-		--gear.Telchine.Legs			= {}
+		gear.Telchine.Legs				= {name="Telchine Braconi", augments={'Accuracy+10','Enh. Mag. eff. dur. +9',}}
 		gear.Telchine.Feet				= {name="Telchine Pigaches", augments={'"Cure" spellcasting time -4%','Enh. Mag. eff. dur. +9',}}
 	
 	-- Helios
@@ -140,7 +140,8 @@ function user_setup()
 		gear.Amalric.Head = {}
 		gear.Amalric.Head.A 			= {name="Amalric Coif", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15'}}
 		gear.Amalric.Body = {}
-		gear.Amalric.Body.D				= {name="Amalric Doublet", augments={'MP+60','"Mag.Atk.Bns."+20','"Fast Cast"+3'}}
+		gear.Amalric.Body.A				= {name="Amalric Doublet +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}}
+		gear.Amalric.Body.C				= {name="Amalric Doublet", augments={'INT+10','Elem. magic skill +15','Dark magic skill +15',}}
 		gear.Amalric.Hands = {}
 		gear.Amalric.Hands.A 			= {name="Amalric Gages", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}}
 		gear.Amalric.Hands.D 			= {name="Amalric Gages +1", augments={'INT+12','Mag. Acc.+20','"Mag.Atk.Bns."+20'}}
@@ -664,7 +665,7 @@ function init_gear_sets()
 																	sub="Niobid Strap",
 																	ammo="Ghastly Tathlum +1",
 																	head=gear.Amalric.Head.A,
-																	body=gear.Amalric.Body.D,
+																	body=gear.Amalric.Body.A,
 																	hands=gear.BLMAF.Hands,
 																	legs=gear.BLMAF.Legs,
 																	feet=gear.Psycloth.Feet,
@@ -717,8 +718,10 @@ function init_gear_sets()
     sets.precast.FC['Elemental Magic'] = 							{ammo="Sapience Orb",		
 																	head=gear.Merlinic.Head.FC,			
 																	body="Zendik Robe",				
-																	hands=gear.Mallquis.Hands,		
-																	legs=gear.Mallquis.Legs,			
+																	hands=gear.Merlinic.Hands.FC,		-- 6
+																	legs=gear.Psycloth.Legs,			-- 7
+																	--hands=gear.Mallquis.Hands,		
+																	--legs=gear.Mallquis.Legs,			
 																	feet=gear.Merlinic.Feet.FC,			
 																	neck="Voltsurge Torque",			
 																	waist="Witful Belt",				
@@ -1074,6 +1077,8 @@ function init_gear_sets()
 																	back="Grapevine cape",}
 																			
 	sets.midcast.Regen = 											sets.midcast['Enhancing Magic']
+	
+	sets.midcast.Haste =											sets.midcast['Enhancing Magic']
 																			
 	sets.midcast.Stoneskin =					 					{ammo="Sapience Orb",
 																	head=gear.Telchine.Head,
@@ -1296,6 +1301,10 @@ function job_post_midcast(spell, action, spellMap, eventArgs)
 			if spell.english:startswith('Warp*|Retrace|Escape|Tractor') then
 					equip(sets.midcast.FastRecast)
 				end
+			--[[elseif spell.skill == 'Enhancing Magic' then
+					equip(sets.midcast['Enhancing Magic'])end
+					end
+				end]]--
 			end
 		end
 	end

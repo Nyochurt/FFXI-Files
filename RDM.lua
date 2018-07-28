@@ -97,10 +97,10 @@ function user_setup()
     
 	-- Relic119 -- 						TierII Enfeebles/PhalanxII and Chainspell Bonuses
 		gear.RDMRelic = {}
-		gear.RDMRelic.Head 				= {name="Viti. Chapeau +1", augments={'Enhances "Dia III" effect','Enhances "Slow II" effect',}}
+		gear.RDMRelic.Head 				= {name="Viti. Chapeau +2", augments={'Enhances "Dia III" effect','Enhances "Slow II" effect',}}
 		gear.RDMRelic.Body 				= {name="Viti. Tabard +3", augments={'Enhances "Chainspell" effect',}}
 		gear.RDMRelic.Hands				= {name="Viti. Gloves +2", augments={'Enhances "Phalanx II" effect',}}
-		gear.RDMRelic.Legs 				= {name="Viti. Tights +1", augments={'Enhances "Bio III" effect','Enhances "Blind II" effect',}}
+		gear.RDMRelic.Legs 				= {name="Viti. Tights +3", augments={'Enhances "Bio III" effect','Enhances "Blind II" effect',}}
 		gear.RDMRelic.Feet 				= {name="Vitivation Boots +1", augments={'Enhances "Paralyze II" effect',}}
 	
 	-- Empyrean --
@@ -124,8 +124,8 @@ function user_setup()
 		
     -- Telchine    
 		gear.Telchine = {}
-		gear.Telchine.Head 				= {name="Telchine Cap", augments={'Spell interruption rate down -7%','Enh. Mag. eff. dur. +7',}}
-		gear.Telchine.Body 				= {name="Telchine Chas.", augments={'Evasion+14','Spell interruption rate down -9%','Enh. Mag. eff. dur. +7',}}
+		gear.Telchine.Head 				= {name="Telchine Cap", augments={'Spell interruption rate down -7%','Enh. Mag. eff. dur. +8',}}
+		gear.Telchine.Body 				= {name="Telchine Chas.", augments={'Evasion+14','Spell interruption rate down -9%','Enh. Mag. eff. dur. +9',}}
 		gear.Telchine.Hands 			= {name="Telchine Gloves", augments={'Mag. Evasion+10','"Cure" spellcasting time -4%','Enh. Mag. eff. dur. +9',}}
 		gear.Telchine.Legs 				= {name="Telchine Braconi", augments={'Accuracy+10','Enh. Mag. eff. dur. +9',}}
 		gear.Telchine.Feet 				= {name="Telchine Pigaches", augments={'"Cure" spellcasting time -4%','Enh. Mag. eff. dur. +9',}}
@@ -180,8 +180,8 @@ function user_setup()
 		gear.Amalric.Head.A 			= {name="Amalric Coif", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15'}}
 		--gear.Amalric.Head.B	 		= {name="Amalric Coif", augments={'MP+60','INT+10','Enmity-5',}}
 		gear.Amalric.Body = {}
-		--gear.Amalric.Body.A 			= {name="Amalric Doublet", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15'}}
-		gear.Amalric.Body.D 			= {name="Amalric Doublet", augments={'MP+60','"Mag.Atk.Bns."+20','"Fast Cast"+3'}}
+		gear.Amalric.Body.A 			= {name="Amalric Doublet +1", augments={'MP+80','Mag. Acc.+20','"Mag.Atk.Bns."+20',}}
+		gear.Amalric.Body.C 			= {name="Amalric Doublet", augments={'INT+10','Elem. magic skill +15','Dark magic skill +15',}}
 		gear.Amalric.Hands = {}
 		gear.Amalric.Hands.A 			= {name="Amalric Gages", augments={'MP+60','Mag. Acc.+15','"Mag.Atk.Bns."+15',}}
 		gear.Amalric.Hands.C 			= {name="Amalric Gages", augments={'INT+10','Elem. magic skill +15','Dark magic skill +15',}}
@@ -1235,12 +1235,12 @@ function init_gear_sets()
     sets.midcast['Enfeebling Magic'] = 								{main=gear.Staff.Grioavolr.Enf,
 																	sub="Enki Strap",
 																	ammo="Regal Gem",
-																	head=gear.Merlinic.Head.MAB,
+																	head=gear.RDMRelic.Head,
 																	body=gear.RDMAF.Body,
 																	hands="Regal Cuffs",
 																	legs=gear.Chironic.Legs.Macc,
 																	feet=gear.Mediums,
-																	neck="Erra Pendant",
+																	neck="Duelist's Torque",
 																	waist="Luminary Sash",
 																	left_ear="Digni. Earring",
 																	right_ear="Gwati Earring",
@@ -1259,7 +1259,7 @@ function init_gear_sets()
 																	hands=gear.RDMEmpy.Hands,
 																	legs=gear.Chironic.Legs.Macc,
 																	feet=gear.Mediums,
-																	neck="Incanter's Torque",
+																	neck="Duelist's Torque",
 																	waist="Rumination Sash",
 																	left_ear="Digni. Earring",
 																	right_ear="Gwati Earring",

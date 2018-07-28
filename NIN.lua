@@ -100,10 +100,10 @@ function user_setup()
 		-- Relic --
 		gear.NINRelic = {}
 		gear.NINRelic.Head 				= {name="Mochi. Hatsuburi +2", augments={'Increases elem. ninjutsu III damage',}}
-		gear.NINRelic.Body 				= {name="Mochi. Chainmail +1", augments={'Enhances "Sange" effect',}}
-		gear.NINRelic.Hands				= {name="Mochizuki Tekko +2", augments={'Enh. "Ninja Tool Expertise" effect',}}
-		gear.NINRelic.Legs 				= {name="Mochi. Hakama +1", augments={'Enhances "Mijin Gakure" effect',}}
-		gear.NINRelic.Feet 				= {name="Mochi. Kyahan +2", augments={'Reduces elem. ninjutsu III cast time',}}
+		gear.NINRelic.Body 				= {name="Mochi. Chainmail +3", augments={'Enhances "Sange" effect',}}
+		gear.NINRelic.Hands				= {name="Mochizuki Tekko +3", augments={'Enh. "Ninja Tool Expertise" effect',}}
+		gear.NINRelic.Legs 				= {name="Mochi. Hakama +2", augments={'Enhances "Mijin Gakure" effect',}}
+		gear.NINRelic.Feet 				= {name="Mochi. Kyahan +3", augments={'Reduces elem. ninjutsu III cast time',}}
 		
 		-- Empyrean --
 		gear.NINEmpy = {}
@@ -1035,17 +1035,17 @@ function init_gear_sets()
 	----------------------------------------------------------------
 	-- Ninjutsu Midcast Set(s)
 	----------------------------------------------------------------
-    sets.midcast.ElementalNinjutsu = 								{ammo="Pemphredo Tathlum",
+    sets.midcast.ElementalNinjutsu = 								{ammo="Seeth. Bomblet +1",
 																	head=gear.NINRelic.Head,
 																	body=gear.Samnuha.Body,
 																	hands=gear.NINEmpy.Hands,
 																	legs="Gyve Trousers",
-																	feet=gear.Herc.Feet,
+																	feet=gear.NINAF.Feet,
 																	neck="Sanctity Necklace",
 																	waist="Eschan Stone",
 																	left_ear="Friomisi Earring",
 																	right_ear="Crematio Earring",
-																	left_ring="Stikini Ring",
+																	left_ring="Adoulin Ring",
 																	right_ring="Dingir Ring",
 																	back=gear.Andartia.Nuke}
 
@@ -1065,8 +1065,8 @@ function init_gear_sets()
 
     sets.midcast.NinjutsuDebuff = 									{ammo="Yamarang",
 																	head=gear.NINAF.Head,
-																	body=gear.Samnuha.Body,
-																	hands=gear.Mummu.Hands,
+																	body=gear.Mummu.Body,
+																	hands=gear.NINRelic.Hands,
 																	legs=gear.Mummu.Legs,
 																	feet=gear.NINAF.Feet,
 																	neck="Incanter's Torque",
@@ -1137,7 +1137,7 @@ function init_gear_sets()
 																	left_ear="Trux Earring",
 																	right_ear="Eabani Earring",
 																	left_ring="Regal Ring",
-																	right_ring="Apate Ring",
+																	right_ring="Ilabrat Ring",
 																	back=gear.Andartia.TP}
     ----------------------------------------------------------------
 	-- 37 DW To Cap Delay
