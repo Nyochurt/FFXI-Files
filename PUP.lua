@@ -101,18 +101,13 @@ function user_setup()
 		
 		-- Herculean --
 		gear.Herc = {}
-		gear.Herc.Head 					= {name="Herculean Helm", augments={'Accuracy+17 Attack+17','Weapon skill damage +1%','STR+4','Accuracy+15',}}
-		gear.Herc.Body 					= {name="Herculean Vest", augments={'Pet: Attack+28 Pet: Rng.Atk.+28','MND+1','Weapon skill damage +1%','Mag. Acc.+20 "Mag.Atk.Bns."+20',}}
-		gear.Herc.Hands 				= {name="Herculean Gloves", augments={'Accuracy+13','Mag. Acc.+6 "Mag.Atk.Bns."+6','Accuracy+20 Attack+20',}}
-		gear.Herc.Legs 					= {name="Herculean Trousers", augments={'Phys. dmg. taken -5%',}}
-		gear.Herc.Feet 					= {name="Herculean Boots", augments={'INT+6','Pet: Attack+12 Pet: Rng.Atk.+12','Damage taken-2%','Accuracy+13 Attack+13','Mag. Acc.+20 "Mag.Atk.Bns."+20',}}
+		gear.Herc.Head 					= {name="Herculean Helm", augments={'Accuracy+12 Attack+12','"Triple Atk."+2','STR+10','Accuracy+14','Attack+4',}}
+		gear.Herc.Body 					= {name="Herculean Vest", augments={'"Triple Atk."+1','STR+9','Accuracy+9','Attack+11',}}
+		gear.Herc.Hands 				= {name="Herculean Gloves", augments={'Accuracy+23','"Triple Atk."+3','DEX+8','Attack+12',}}
+		gear.Herc.Legs 					= {name="Herculean Trousers", augments={'Attack+13','Crit. hit damage +2%','STR+10','Accuracy+11',}}
+		gear.Herc.Feet 					= {name="Herculean Boots", augments={'Attack+29','"Triple Atk."+3','Accuracy+5',}}
 		
-		gear.Herc.Head.PetMacc		 	= {name="Herculean Helm", augments={'Pet: Mag. Acc.+30','Pet: "Store TP"+7','Pet: INT+8','Pet: "Mag.Atk.Bns."+12',}}
-		gear.Herc.Legs.Acc 				= {name="Herculean Trousers", augments={'"Dual Wield"+3','DEX+12','Accuracy+12','Attack+15',}}
-		gear.Herc.Legs.PetDT 			= {name="Herculean Trousers", augments={'Pet: Phys. dmg. taken -3%','Pet: Attack+6 Pet: Rng.Atk.+6',}}
-		gear.Herc.Body.Acc			 	= {name="Herculean Vest", augments={'Accuracy+23 Attack+23','Weapon skill damage +2%','STR+5','Accuracy+15',}}
-		gear.Herc.Body.WSD 				= {name="Herculean Vest", augments={'Weapon skill damage +5%','Accuracy+15',}}
-			
+					
 		-- Naga --
 		gear.Naga = {}
 		gear.Naga.Head 					= {name="Naga Somen", augments={'Pet: MP+80','Automaton: "Fast Cast"+4','System: 2 ID: 157 Val: 2',}}
@@ -129,11 +124,11 @@ function user_setup()
 		
 		-- Rao --
 		gear.RaoPetDT = {}
-		gear.RaoPetDT.Head 				= {name="Rao Kabuto", augments={'Pet: HP+100','Pet: Accuracy+15','Pet: Damage taken -3%',}}
+		gear.RaoPetDT.Head 				= {name="Rao Kabuto +1", augments={'Pet: HP+125','Pet: Accuracy+20','Pet: Damage taken -4%',}}
 		gear.RaoPetDT.Body 				= {name="Rao Togi", augments={'Pet: HP+100','Pet: Accuracy+15','Pet: Damage taken -3%',}}
 		gear.RaoPetDT.Hands 			= {name="Rao Kote", augments={'Pet: HP+100','Pet: Accuracy+15','Pet: Damage taken -3%',}}
-		gear.RaoPetDT.Legs 				= {name="Rao Haidate", augments={'Pet: HP+100','Pet: Accuracy+15','Pet: Damage taken -3%',}}
-		gear.RaoPetDT.Feet 				= {name="Rao Sune-Ate", augments={'Pet: HP+100','Pet: Accuracy+15','Pet: Damage taken -3%',}}
+		gear.RaoPetDT.Legs 				= {name="Rao Haidate +1", augments={'Pet: HP+125','Pet: Accuracy+20','Pet: Damage taken -4%',}}
+		gear.RaoPetDT.Feet 				= {name="Rao Sune-Ate +1", augments={'Pet: HP+125','Pet: Accuracy+20','Pet: Damage taken -4%',}}
 
 		gear.RaoMaster = {}
 		gear.RaoMaster.Head 			= {name="Rao Kabuto", augments={'STR+10','DEX+10','Attack+15',}}
@@ -141,24 +136,29 @@ function user_setup()
 		gear.RaoMaster.Hands 			= {name="Rao Kote", augments={'STR+10','DEX+10','Attack+15',}}
 		gear.RaoMaster.Legs 			= {name="Rao Haidate", augments={'STR+10','DEX+10','Attack+15',}}
 		gear.RaoMaster.Feet 			= {name="Rao Sune-Ate", augments={'STR+10','DEX+10','Attack+15',}}
-		
-		
+				
 		-- Rawhide --
 		gear.Rawhide = {}
-		gear.Rawhide.Body 				= {name="Rawhide Vest", augments={'HP+50','"Subtle Blow"+7','"Triple Atk."+2',}}
+		gear.Rawhide.Head				= {name="Rawhide Mask", augments={'HP+50','Accuracy+15','Evasion+20',}}	
+		gear.Rawhide.Body 				= {name="Rawhide Vest", augments={'HP+43','Accuracy+12','Evasion+17',}}
 		gear.Rawhide.Legs 				= {name="Rawhide Trousers", augments={'MP+50','"Fast Cast"+5','"Refresh"+1',}}
 
 		-- Ryuo --
 		gear.Ryuo = {}
 		gear.Ryuo.Head 					= {name="Ryuo Somen", augments={'STR+10','DEX+10','Accuracy+15',}}
 		gear.Ryuo.Body 					= {name="Ryuo Domaru", augments={'STR+10','DEX+10','Accuracy+15',}}
-		gear.Ryuo.Hands 				= {name="Ryuo Tekko", augments={'DEX+10','Accuracy+20','"Dbl.Atk."+3',}}
+		gear.Ryuo.Hands 				= {name="Ryuo Tekko +1", augments={'STR+12','DEX+12','Accuracy+20',}}
 		gear.Ryuo.Legs 					= {name="Ryuo Hakama", augments={'Accuracy+20','"Store TP"+4','Phys. dmg. taken -3',}}
-		gear.Ryuo.Feet 					= {name="Ryuo Sune-Ate", augments={'STR+10','Attack+20','Crit. hit rate+3%',}}
+		gear.Ryuo.Feet 					= {name="Ryuo Sune-Ate +1", augments={'STR+12','DEX+12','Accuracy+20',}}
 		
 		-- Taeon --
 		gear.Taeon = {}
-		gear.Taeon.Hands 				= {name="Taeon Gloves", augments={'Pet: Accuracy+14 Pet: Rng. Acc.+14','"Fast Cast"+5','STR+7 AGI+7',}}
+		gear.Taeon.Hands 				= {name="Taeon Gloves", augments={'Accuracy+20 Attack+20','Pet: "Dbl. Atk."+3','Pet: Damage taken -4%',}}
+		gear.Taeon.Body					= {name="Taeon Tabard", augments={'Pet: Accuracy+25 Pet: Rng. Acc.+25','Pet: Crit.hit rate +4','Pet: Damage taken -4%',}}
+		gear.Taeon.Head					= {name="Taeon Chapeau", augments={'Pet: Accuracy+24 Pet: Rng. Acc.+24','Pet: "Dbl. Atk."+4','Pet: Damage taken -4%',}}
+		gear.Taeon.Legs					= {name="Taeon Tights", augments={'Pet: Attack+18 Pet: Rng.Atk.+18','"Repair" potency +5%','Pet: Damage taken -4%',}}
+		gear.Taeon.Feet					= {name="Taeon Boots", augments={'Pet: Accuracy+19 Pet: Rng. Acc.+19','Pet: Crit.hit rate +4','Pet: Damage taken -4%',}}
+		
 		
 	-- Miscellaneous --
 		-- Hizamaru --
@@ -171,10 +171,10 @@ function user_setup()
 		
 		-- Tali'ah --
 		gear.Tali = {}
-		gear.Tali.Head					= {name="Tali'ah Turban +1"}
-		gear.Tali.Body					= {name="Tali'ah Manteel +1"}
+		gear.Tali.Head					= {name="Tali'ah Turban +2"}
+		gear.Tali.Body					= {name="Tali'ah Manteel +2"}
 		gear.Tali.Hands					= {name="Tali'ah Gages +1"}
-		gear.Tali.Legs					= {name="Tali'ah Sera. +1"}
+		gear.Tali.Legs					= {name="Tali'ah Sera. +2"}
 		gear.Tali.Feet					= {name="Tali'ah Crackows +1"}
     
 		gear.Samnuha = {}
@@ -448,17 +448,17 @@ function init_gear_sets()
 	
 	-- Victory Smite - STR
     sets.precast.WS['Victory Smite'] = 									{ammo="Knobkierrie",
-																		head=gear.RaoMaster.Head,
-																		body=gear.Ryuo.Body,
-																		hands=gear.RaoMaster.Hands,
+																		head="Blistering sallet +1",
+																		body="Heyoka Harness",
+																		hands=gear.Ryuo.Hands,
 																		legs=gear.Hiza.Legs,
 																		feet=gear.Ryuo.Feet,
 																		neck="Fotia Gorget",
-																		waist="Fotia Belt",
-																		left_ear="Zennaroi Earring",
-																		right_ear="Odnowa Earring +1",
+																		waist="Moonbow belt +1",
+																		left_ear="Ishvara Earring",
+																		right_ear="Moonshade Earring",
 																		left_ring="Niqmaddu Ring",
-																		right_ring="Regal Ring",
+																		right_ring="Epona's Ring",
 																		back=gear.Visucius.PetHaste} 
 	
 	-- Stringing Pummel - STR/VIT
@@ -570,8 +570,8 @@ function init_gear_sets()
 																		waist="Klouskap Sash",
 																		left_ear="Handler's Earring +1",
 																		right_ear="Odnowa Earring +1",
-																		left_ring="Varar Ring",
-																		right_ring="Varar Ring",
+																		left_ring="Varar Ring +1",
+																		right_ring="Thurandaut Ring",
 																		back=gear.PUPJSECape}
  
     -- Sets to return to when not performing an action.
@@ -621,27 +621,27 @@ function init_gear_sets()
 																		right_ear="Enmerker Earring",
 																		body=gear.PUPAF.Body,
 																		--hands="Regimen Mittens",
-																		ring1="Varar Ring",
-																		ring2="Varar Ring",
+																		ring1="Thurandaut Ring",
+																		ring2="Varar Ring +1",
 																		back=gear.Visucius.PetHaste,
 																		waist="Klouskap Sash",
 																		legs=gear.PUPEmpy.Legs,
 																		feet="Punchinellos",}--Handler's Earring/Burana Earring
  
-    sets.idle.Pet.PetDT = 												{range="Animator P",
-																		ammo ="Automat. Oil +3",
-																		head=gear.RaoPetDT.Feet,
-																		body=gear.RaoPetDT.Feet,
-																		hands=gear.RaoPetDT.Hands,
-																		legs=gear.Tali.Legs,
-																		feet=gear.RaoPetDT.Feet,
-																		neck="Empath Necklace",
-																		waist="Isa Belt",
-																		left_ear="Handler's Earring +1",
-																		right_ear="Enmerker Earring",
-																		left_ring="Varar Ring",
-																		right_ring="Varar Ring",
-																		back=gear.Visucius.PetRegen,}
+    sets.idle.Pet.PetDT = 												{range="Animator P +1",
+																		ammo="Automat. Oil +3",
+																		head={ name="Taeon Chapeau", augments={'Pet: Accuracy+24 Pet: Rng. Acc.+24','Pet: "Dbl. Atk."+4','Pet: Damage taken -4%',}},
+																		body={ name="Taeon Tabard", augments={'Pet: Accuracy+25 Pet: Rng. Acc.+25','Pet: Crit.hit rate +4','Pet: Damage taken -4%',}},
+																		hands={ name="Taeon Gloves", augments={'Accuracy+20 Attack+20','Pet: "Dbl. Atk."+3','Pet: Damage taken -4%',}},
+																		legs={ name="Taeon Tights", augments={'Pet: Attack+18 Pet: Rng.Atk.+18','"Repair" potency +5%','Pet: Damage taken -4%',}},
+																		feet={ name="Taeon Boots", augments={'Pet: Accuracy+19 Pet: Rng. Acc.+19','Pet: Crit.hit rate +4','Pet: Damage taken -4%',}},
+																		neck="Pup. Collar",
+																		waist="Incarnation Sash",
+																		left_ear="Domes. Earring",
+																		right_ear="Rimeice Earring",
+																		left_ring="Varar Ring +1",
+																		right_ring="Thurandaut Ring",
+																		back="Penetrating Cape",}
          
     sets.idle.Pet.Engaged.Ranged = 										{range="Animator P II",
 																		ammo ="Automat. Oil +3",
@@ -654,8 +654,8 @@ function init_gear_sets()
 																		waist="Klouskap Sash",
 																		left_ear="Charivari Earring",
 																		right_ear="Rimeice Earring",
-																		left_ring="Varar Ring",
-																		right_ring="Varar Ring",
+																		left_ring="Varar Ring +1",
+																		right_ring="Thurandaut Ring",
 																		back=gear.Visucius.PetHaste}
  
     sets.idle.Pet.Engaged.Nuke = 										{range="Animator P II",
@@ -736,8 +736,8 @@ function init_gear_sets()
 																		waist="Isa Belt",
 																		left_ear="Handler's Earring +1",
 																		right_ear="Enmerker Earring",
-																		left_ring="Varar Ring",
-																		right_ring="Varar Ring",
+																		left_ring="Varar Ring +1",
+																		right_ring="Thurandaut Ring",
 																		back=gear.Visucius.PetRegen,}
          
     sets.defense.MDT = 													{ammo ="Automat. Oil +3",
@@ -854,8 +854,8 @@ function init_gear_sets()
 																		waist="Klouskap Sash",	
 																		left_ear="Charivari Earring",
 																		right_ear="Enmerker Earring",	
-																		left_ring="Varar Ring",
-																		right_ring="Varar Ring",								
+																		left_ring="Varar Ring +1",
+																		right_ring="Thurandaut Ring",								
 																		back=gear.Visucius.PetHaste,}
          
     sets.engaged.PetEngaged.PetDT =										{ammo ="Automat. Oil +3",
@@ -868,8 +868,8 @@ function init_gear_sets()
 																		waist="Isa Belt",
 																		left_ear="Handler's Earring +1",
 																		right_ear="Enmerker Earring",
-																		left_ring="Varar Ring",
-																		right_ring="Varar Ring",
+																		left_ring="Varar Ring +1",
+																		right_ring="Thurandaut Ring",
 																		back=gear.Visucius.PetRegen,}
          
     sets.engaged.PetEngaged.Ranged =									{ammo ="Automat. Oil +3",
@@ -882,8 +882,8 @@ function init_gear_sets()
 																		waist="Klouskap Sash",
 																		left_ear="Charivari Earring",
 																		right_ear="Rimeice Earring",
-																		left_ring="Varar Ring",
-																		right_ring="Varar Ring",
+																		left_ring="Varar Ring +1",
+																		right_ring="Thurandaut Ring",
 																		back=gear.Visucius.PetHaste,}
  
     sets.engaged.PetEngaged.Nuke = 										{ammo="Automat. Oil +3",
@@ -896,8 +896,8 @@ function init_gear_sets()
 																		waist="Incarnation Sash",
 																		left_ear="Charivari Earring",
 																		right_ear="Enmerker Earring",
-																		left_ring="Varar Ring",
-																		right_ring="Varar Ring",
+																		left_ring="Varar Ring +1",
+																		right_ring="Thurandaut Ring",
 																		back="Argocham. Mantle",}	
  
     sets.engaged.PetEngaged.Heal = 										{ammo="Automat. Oil +3",
@@ -910,8 +910,8 @@ function init_gear_sets()
 																		waist="Incarnation Sash",
 																		left_ear="Handler's Earring +1",
 																		right_ear="Odnowa Earring +1",
-																		left_ring="Varar Ring",
-																		right_ring="Varar Ring",
+																		left_ring="Varar Ring +1",
+																		right_ring="Thurandaut Ring",
 																		back="Refraction Cape",}
      
     sets.engaged.PetEngaged.Magic = 									{ammo="Automat. Oil +3",
@@ -924,8 +924,8 @@ function init_gear_sets()
 																		waist="Incarnation Sash",
 																		left_ear="Charivari Earring",
 																		right_ear="Enmerker Earring",
-																		left_ring="Varar Ring",
-																		right_ring="Varar Ring",
+																		left_ring="Varar Ring +1",
+																		right_ring="Thurandaut Ring",
 																		back="Refraction Cape",}
 end
 -------------------------------------------------------------------------------------------------------------------
@@ -1066,12 +1066,12 @@ end
 function select_default_macro_book()
     -- Default macro set/book
     if player.sub_job == 'DNC' then
-        set_macro_page(1, 14)
+        set_macro_page(1, 18)
     elseif player.sub_job == 'NIN' then
-        set_macro_page(1, 14)
+        set_macro_page(1, 18)
     elseif player.sub_job == 'THF' then
-        set_macro_page(1, 14)
+        set_macro_page(1, 18)
     else
-        set_macro_page(1, 14)
+        set_macro_page(1, 18)
     end
 end
